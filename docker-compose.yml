@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  hugo:
+    container_name: hugo-0.100.2-ubuntu
+    build:
+      context: .
+    image: hayato.tak
+    volumes:
+      - ".:/src"
+    ports:
+      - "1515:1515"
